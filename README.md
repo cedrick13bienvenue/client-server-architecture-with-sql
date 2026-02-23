@@ -79,3 +79,21 @@ sudo systemctl restart mysql
 ```
 
 ---
+
+## Phase 3: Client Machine Configuration
+
+Now, we prepare **Server B** to act as the client that will send requests to our server.
+
+### 3.1 Installation
+
+* **Install MySQL Client utility:**
+
+```bash
+sudo apt update
+sudo apt install mysql-client -y
+
+```
+
+> **Note:** The client machine does not need the full `mysql-server` package, only the `mysql-client` tool to communicate with the remote engine.
+
+---
