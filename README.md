@@ -42,6 +42,7 @@ sudo systemctl status mysql
 ```
 
 > **Expected Output:** The terminal should show the service as **"active (running)"**.
+> ![showing status](screenshoots/1.png)
 
 ### 2.2 Security Group Configuration (Port 3306)
 
