@@ -78,7 +78,7 @@ bind-address = 0.0.0.0
 sudo systemctl restart mysql
 
 ```
-> ![bind-address](screenshoots/2.png)
+> ![Enabling Remote Access](screenshoots/2.png)
 
 ---
 
