@@ -125,5 +125,5 @@ SHOW DATABASES;
 ```
 
 > **Expected Output:** You should see a table listing the default system databases.
-
+> ![Database Validation](screenshoots/3.png)
 ---
