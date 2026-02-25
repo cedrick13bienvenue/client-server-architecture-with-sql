@@ -82,6 +82,29 @@ sudo systemctl restart mysql
 
 ---
 
+### 2.4 Administrative User Configuration
+
+Even with the network open, MySQL blocks remote access for the default root user. You must create a user explicitly allowed to connect from a remote IP (the `%` wildcard allows any IP, or you can specify your client's IP).
+
+* **Access the MySQL Shell locally:**
+
+```bash
+sudo mysql
+
+```
+
+* **Create and authorize the remote user:**
+
+```sql
+CREATE USER 'ubuntu'@'%' IDENTIFIED BY 'your_password_here';
+GRANT ALL PRIVILEGES ON *.* TO 'ubuntu'@'%' WITH GRANT OPTION;
+FLUSH PRIVILEGES;
+EXIT;
+
+```
+
+---
+
 ## Phase 3: Client Machine Configuration
 
 Now, we prepare **Server B** to act as the client that will send requests to our server.
